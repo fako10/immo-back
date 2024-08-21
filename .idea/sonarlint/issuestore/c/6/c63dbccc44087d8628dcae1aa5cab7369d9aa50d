@@ -1,0 +1,33 @@
+
+@
+java:S5411C"*Use the primitive boolean expression here.(‡Ö…²
+@
+java:S5411H"*Use the primitive boolean expression here.(Œ‰ÓŒ
+A
+java:S5411‹"*Use the primitive boolean expression here.(®Ÿ¹º
+X
+java:S2259u"BA "NullPointerException" could be thrown; "user" is nullable here.(çæŠç
+R
+java:S3655V"7Call "Optional#isPresent()" before accessing the value.(ê¾Íóýÿÿÿÿ
+<
+java:S1452."&Remove usage of generic wildcard type.(“ºŠž
+B
+java:S16126",Replace this lambda with a method reference.(¡©é½
+<
+java:S1452B"&Remove usage of generic wildcard type.(”Úùê
+P
+java:S1854[";Remove this useless assignment to local variable "subject".(ÿÁÈ
+W
+java:S1854Z"<Remove this useless assignment to local variable "mailBody".(èéùýÿÿÿÿ
+V	java:S125\"<This block of commented-out lines of code should be removed.(„Ÿ¤†ùÿÿÿÿ
+V	java:S125a"<This block of commented-out lines of code should be removed.(© ÚÃþÿÿÿÿ
+A
+java:S1452m"&Remove usage of generic wildcard type.(²»ðþýÿÿÿÿ
+B
+java:S1612y",Replace this lambda with a method reference.(¡©é½
+=
+java:S1452Š"&Remove usage of generic wildcard type.(õ´á
+H
+java:S1481Z"-Remove this unused "mailBody" local variable.(èéùýÿÿÿÿ
+A
+java:S1481[",Remove this unused "subject" local variable.(ÿÁÈ

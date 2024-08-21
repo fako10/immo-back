@@ -1,0 +1,1 @@
+alter table photo add column id_annonce BIGINT;

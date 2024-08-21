@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/create-tables.sql
+  - include:
+      file: db/changelog/update_codepostal_type.sql
+  - include:
+      file : db/changelog/add_typetransaction.sql
+  - include:
+      file: db/changelog/update_EtatBatiment.sql
+  - include:
+      file: db/changelog/update_after_change_front.sql
+  - include:
+      file: db/changelog/add_photo_name.sql
+  - include:
+      file: db/changelog/change_type_chauffage.sql
+  - include:
+      file: db/changelog/add_photo_prix_sequence.sql
+  - include:
+      file: db/changelog/change_annee_construction.sql
+  - include:
+      file: db/changelog/add_id_annonce.sql
+  - include:
+      file: db/changelog/add_code_annonce_photo.sql
+  - include:
+      file: db/changelog/change_photo.sql
+  - include:
+      file: db/changelog/add_date_creation.sql
+  - include:
+      file: db/changelog/add_user_annonce.sql

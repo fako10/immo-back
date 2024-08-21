@@ -1,0 +1,1 @@
+alter table annonce add column type_transaction varchar(50);

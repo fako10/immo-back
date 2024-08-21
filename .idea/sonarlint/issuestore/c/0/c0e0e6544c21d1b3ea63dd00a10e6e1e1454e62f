@@ -1,0 +1,15 @@
+
+L
+java:S5411I"*Use the primitive boolean expression here.(¦¥¿˜ÿÿÿÿÿ8Ğ¬úŒ2
+X	java:S125j"<This block of commented-out lines of code should be removed.(Ñ˜•õ8¾¢„ç…2
+L
+java:S1481R"/Remove this unused "adresseDto" local variable.(êÁ¼Í8¾¢„ç…2
+T
+java:S3655^"7Call "Optional#isPresent()" before accessing the value.(£ı¶½8¾¢„ç…2
+ˆ
+java:S1130P"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ÿ²æ/8Ğ¬úŒ2
+C
+java:S14525"&Remove usage of generic wildcard type.(ÓÂ˜å8Ğ¬úŒ2
+[
+java:S1854R">Remove this useless assignment to local variable "adresseDto".(êÁ¼Í8¾¢„ç…2
+X	java:S125S"<This block of commented-out lines of code should be removed.(‘·£8¾¢„ç…2
