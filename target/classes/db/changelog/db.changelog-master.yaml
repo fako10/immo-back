@@ -27,3 +27,5 @@ databaseChangeLog:
       file: db/changelog/add_date_creation.sql
   - include:
       file: db/changelog/add_user_annonce.sql
+  - include:
+      file: db/changelog/add_searchannonce.sql

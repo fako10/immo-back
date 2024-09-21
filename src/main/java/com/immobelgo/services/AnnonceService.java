@@ -15,6 +15,7 @@ import com.immobelgo.entities.Interieur;
 import com.immobelgo.entities.PerformanceEnergetique;
 import com.immobelgo.entities.Photo;
 import com.immobelgo.entities.Prix;
+import com.immobelgo.entities.Users;
 import com.immobelgo.helper.FileManagement;
 import com.immobelgo.repository.AdresseRepository;
 import com.immobelgo.repository.AnnonceRepository;
@@ -22,6 +23,8 @@ import com.immobelgo.repository.InterieurRepository;
 import com.immobelgo.repository.PerformanceEnergetiqueRepository;
 import com.immobelgo.repository.PhotoRepository;
 import com.immobelgo.repository.PrixRepository;
+import com.immobelgo.repository.StreetsRepository;
+import com.immobelgo.security.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -48,6 +51,9 @@ public class AnnonceService {
     private InterieurRepository interieurRepository;
     @Autowired
     private PrixRepository prixRepository;
+    @Autowired
+    UserDetailsServiceImpl userDetails;
+
 
     @Transactional
     public ResponseEntity<?> addPhotoToAnnonce(MultipartFile[] files, String code) throws IOException {
@@ -97,6 +103,9 @@ public class AnnonceService {
         annonce.setAdresse(adresse);
         Date dateCreation = new Date();
         annonce.setDateCreation(dateCreation);
+
+        Users user = userDetails.getConnectedUser();
+        annonce.setUser(user);
         annonceRepository.save(annonce);
         savePerformancePeb(annonceDto.getCertificationPeb(), annonce);
         saveInterieur(annonceDto.getInterieur(), annonce);
